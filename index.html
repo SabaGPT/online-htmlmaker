@@ -11,21 +11,30 @@
             flex-direction: column;
             height: 100vh;
             margin: 0;
+            background-color: #f0f0f0;
         }
         #editor-container {
             display: flex;
             flex: 1;
             flex-direction: row;
             overflow: hidden;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
         }
         textarea {
             width: 50%;
             height: 100%;
             padding: 10px;
             font-size: 16px;
-            border: none;
+            border-right: 1px solid #ccc;
+            border-top: none;
+            border-bottom: none;
             outline: none;
             resize: none;
+            background-color: #fafafa;
+            color: #333;
+            font-family: 'Courier New', Courier, monospace;
         }
         iframe {
             width: 50%;
@@ -39,6 +48,11 @@
             textarea, iframe {
                 width: 100%;
                 height: 50%;
+                border-right: none;
+                border-bottom: 1px solid #ccc;
+            }
+            iframe {
+                border-bottom: none;
             }
         }
     </style>
